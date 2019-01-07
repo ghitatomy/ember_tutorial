@@ -13,7 +13,6 @@ export default Controller.extend({
         date: new Date(date)
       });
 
-      window.console.log('Action triggered');
       // Save to database
       newTask.save();
 

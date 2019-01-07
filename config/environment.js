@@ -4,6 +4,15 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-tutorial',
     environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: {
+      apiKey: 'AIzaSyB9Sn0P4FrN004E2iTHWIZnOgFspW7U1AU',
+      authDomain: 'emtasks-376c9.firebaseapp.com',
+      databaseURL: 'https://emtasks-376c9.firebaseio.com',
+      projectId: 'emtasks-376c9',
+      storageBucket: 'emtasks-376c9.appspot.com',
+      messagingSenderId: '177750558539'
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
